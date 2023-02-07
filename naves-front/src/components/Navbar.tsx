@@ -13,7 +13,7 @@ export const Navbar = () => {
             className={({ isActive }) =>
               `nav-item nav-link ${isActive ? 'active' : ''}`
             }
-            to="/marvel"
+            to="/create"
           >
             Crear Nave
           </NavLink>
@@ -22,7 +22,7 @@ export const Navbar = () => {
             className={({ isActive }) =>
               `nav-item nav-link ${isActive ? 'active' : ''}`
             }
-            to="/dc"
+            to="/inventory"
           >
             Tu Inventario
           </NavLink>
@@ -32,7 +32,7 @@ export const Navbar = () => {
             }
             to="/search"
           >
-            Buscar Naves
+            Buscar
           </NavLink>
         </div>
       </div>
