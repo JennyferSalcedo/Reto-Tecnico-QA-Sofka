@@ -1,6 +1,6 @@
 .mainContainer {
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,4 +12,62 @@
   height: 90vh;
   border-radius: 1rem;
   box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prueba {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.TitleContainer {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.midItem {
+  height: 5%;
+}
+
+.fieldsContainer {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.obligatory {
+  color: red;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  height: 5%;
+  margin: 1rem;
+}
+
+.button {
+    background-color: chocolate;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
 }
