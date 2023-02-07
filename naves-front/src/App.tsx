@@ -1,12 +1,12 @@
-import './App.css'
+import './App.css';
+import { Navbar } from './components';
 
 function App() {
-
   return (
-    <div>
-      <h1>Hola</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+    </>
+  );
 }
 
-export default App
+export default App;

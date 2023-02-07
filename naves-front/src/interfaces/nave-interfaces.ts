@@ -2,6 +2,7 @@
 export interface Spaceship {
   name: string;
   weight: number;
+  createSpaceShip: () => void
 }
 
 // Nave Espacial con empuje
