@@ -2,9 +2,6 @@ import { useState } from 'react';
 import { useFetch } from '../hooks';
 import { GridSpaceships } from '../components';
 
-// interface Props {
-//   onNewSpaceship: (value: string) => void;
-// }
 
 export const SearchSpaceshipPage = () => {
   const [inputValue, setInputValue] = useState('');
@@ -19,18 +16,16 @@ export const SearchSpaceshipPage = () => {
     if (inputValue.trim().length <= 1) return;
     console.log('inputValue', inputValue);
     getFetch();
-    // onNewSpaceship(inputValue.trim());
     setInputValue('');
   };
 
-  // console.log('data', data)
 
   return (
     <div className="searchContainer">
       <form onSubmit={onSubmit} aria-label="form">
         <input
           type="text"
-          placeholder="Busca tus naves"
+          placeholder="Busca tus naves. Escribe un nombre, ejemplo: Saturno V"
           value={inputValue}
           onChange={onInputChange}
           className="searchInput"

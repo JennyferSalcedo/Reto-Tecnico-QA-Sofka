@@ -7,9 +7,9 @@ export const SpaceshipInventoryPage = () => {
   const { data = [] } = useFetch(baseURL);
 
   return (
-    <div className="container">
-      <h1>Tus naves:</h1>
-      <hr />
+    <div className="inventoryContainer">
+      <h1 className='inventoryTitle'>Tus naves:</h1>
+      <hr className='inventoryTitle' />
       <GridSpaceships data={data} />
     </div>
   );

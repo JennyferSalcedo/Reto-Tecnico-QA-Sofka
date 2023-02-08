@@ -90,12 +90,25 @@
   box-shadow: 6px 6px rgba(0, 0, 0, 0.1);
 }
 
+.inventoryContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/lost.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inventoryTitle {
+  color: white;
+  margin: 0rem 0rem 1rem 2rem;
+}
+
 .searchContainer {
   /* margin: 1.5rem; */
-  height: 92vh;
+  height: 100%;
   background-color: palegreen;
   background-image: url('./assets/wallpaper.jpeg');
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .searchInput {
