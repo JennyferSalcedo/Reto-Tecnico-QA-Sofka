@@ -27,6 +27,15 @@ public class SpaceshipsController {
         }
     }
 
+    @GetMapping("filter")
+    public ResponseEntity<List<SpaceshipDto>> getSpaceshipsByName(@RequestParam String name) {
+        try {
+            return ResponseEntity.ok(spaceshipsService.getSpaceshipByName(name));
+        } catch (Exception exception) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
+    }
+
     @GetMapping
     public ResponseEntity<List<SpaceshipDto>> getSpaceships() {
         try {

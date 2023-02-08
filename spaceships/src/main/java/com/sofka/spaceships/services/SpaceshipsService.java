@@ -29,6 +29,15 @@ public class SpaceshipsService {
         }
     }
 
+    public List<SpaceshipDto> getSpaceshipByName(String name) {
+        List<Spaceship> spaceships = spaceshipRepository.findByName(name);
+        ArrayList<SpaceshipDto> spaceshipDtos = new ArrayList<>();
+        for(Spaceship spaceship : spaceships) {
+            spaceshipDtos.add(spaceshipFactory.buildSpaceshipDtoFromSpaceship(spaceship));
+        }
+        return spaceshipDtos;
+    }
+
     public List<SpaceshipDto> getAllSpaceships() {
         ArrayList<SpaceshipDto> createdSpaceshipDtos = new ArrayList<>();
         List<Spaceship> spaceshipList = spaceshipRepository.findAll();
