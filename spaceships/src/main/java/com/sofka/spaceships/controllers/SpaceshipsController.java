@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v1/api/spaceships")
+@CrossOrigin(origins = {"http://localhost:5173","http://localhost:8080"})
 public class SpaceshipsController {
 
     @Autowired
