@@ -1,8 +1,11 @@
+import { Card } from '../components';
 
 export const SpaceshipInventoryPage = () => {
   return (
-    <div>
-        <h1>Hola</h1>
+    <div className="container">
+      <h1>Tus naves:</h1>
+      <hr />
+      <Card />
     </div>
-  )
-}
+  );
+};
