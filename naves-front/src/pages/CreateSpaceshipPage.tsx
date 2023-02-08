@@ -61,6 +61,7 @@ export const CreateSpaceshipPage = () => {
     postFetch(formState);
     // Devuelvo los inputs a su estado inicial
     onResetForm();
+    cells.current = false;
   };
 
   return (
