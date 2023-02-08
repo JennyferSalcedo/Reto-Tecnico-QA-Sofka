@@ -57,5 +57,6 @@ export const useFetch = (url: string) => {
     isLoading: state.isLoading,
     hasError: state.hasError,
     postFetch,
+    getFetch,
   };
 };
