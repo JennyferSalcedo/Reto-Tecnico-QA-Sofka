@@ -18,7 +18,7 @@ public class Spaceship {
     @Column(nullable = false)
     private String weight;
     @Column
-    private Integer pushingPower;
+    private Float pushingPower;
     @Column
     private String loadedWeight;
     @Column
@@ -48,7 +48,7 @@ public class Spaceship {
     public Spaceship() {
     }
 
-    public Spaceship(Long id, String name, String weight, Integer pushingPower, String loadedWeight, Integer height, String fuel, String speed, Boolean hasCells, String groundClearance, Integer numberOfSeats, String type, Timestamp createdAt, Timestamp updatedAt) {
+    public Spaceship(Long id, String name, String weight, Float pushingPower, String loadedWeight, Integer height, String fuel, String speed, Boolean hasCells, String groundClearance, Integer numberOfSeats, String type, Timestamp createdAt, Timestamp updatedAt) {
         this.id = id;
         this.name = name;
         this.weight = weight;
@@ -89,11 +89,11 @@ public class Spaceship {
         this.weight = weight;
     }
 
-    public Integer getPushingPower() {
+    public Float getPushingPower() {
         return pushingPower;
     }
 
-    public void setPushingPower(Integer pushingPower) {
+    public void setPushingPower(Float pushingPower) {
         this.pushingPower = pushingPower;
     }
 

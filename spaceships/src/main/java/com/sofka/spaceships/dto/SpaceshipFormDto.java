@@ -4,7 +4,7 @@ public class SpaceshipFormDto {
 
     private String name;
     private String weight;
-    private Integer pushingPower;
+    private Float pushingPower;
     private String loadedWeight;
     private Integer height;
     private String fuel;
@@ -16,7 +16,7 @@ public class SpaceshipFormDto {
     public SpaceshipFormDto() {
     }
 
-    public SpaceshipFormDto(String name, String weight, Integer pushingPower, String loadedWeight, Integer height, String fuel, String speed, Boolean hasCells, String groundClearance, Integer numberOfSeats) {
+    public SpaceshipFormDto(String name, String weight, Float pushingPower, String loadedWeight, Integer height, String fuel, String speed, Boolean hasCells, String groundClearance, Integer numberOfSeats) {
         this.name = name;
         this.weight = weight;
         this.pushingPower = pushingPower;
@@ -45,11 +45,11 @@ public class SpaceshipFormDto {
         this.weight = weight;
     }
 
-    public Integer getPushingPower() {
+    public Float getPushingPower() {
         return pushingPower;
     }
 
-    public void setPushingPower(Integer pushingPower) {
+    public void setPushingPower(Float pushingPower) {
         this.pushingPower = pushingPower;
     }
 

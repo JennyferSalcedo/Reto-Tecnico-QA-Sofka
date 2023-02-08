@@ -5,13 +5,13 @@ public class ThrustSpaceshipDto extends SpaceshipDto {
         super();
     }
 
-    private Integer pushingPower;
+    private Float pushingPower;
 
-    public Integer getPushingPower() {
+    public Float getPushingPower() {
         return pushingPower;
     }
 
-    public void setPushingPower(Integer pushingPower) {
+    public void setPushingPower(Float pushingPower) {
         this.pushingPower = pushingPower;
     }
 }
