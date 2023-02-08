@@ -47,6 +47,19 @@
   flex-direction: column;
 }
 
+.radios {
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  width: 100%;
+}
+
+.item2 {
+  margin: 0rem 1rem 0rem 1rem;
+}
+
 .labelText {
   font-size: 1.2rem;
   font-weight: bold;

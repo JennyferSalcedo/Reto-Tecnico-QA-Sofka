@@ -25,6 +25,6 @@ export interface UnmannedSpaceCraft extends ThrustSpaceship {
 
 // Naves espaciales tripuladas
 export interface MannedSpaceCraft extends Spaceship {
-  m: string;
+  groundClearance: string;
   numberOfSeats: number;
 }
