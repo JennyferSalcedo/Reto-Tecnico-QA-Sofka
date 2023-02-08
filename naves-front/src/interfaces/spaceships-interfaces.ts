@@ -28,3 +28,19 @@ export interface MannedSpaceCraft extends Spaceship {
   groundClearance: string;
   numberOfSeats: number;
 }
+
+
+// Petición HTTP a backend
+export interface SpaceshipCreateRequest {
+  name:            string;
+  weight:          string;
+  pushingPower?:   number;
+  loadedWeight?:   string;
+  height?:          number;
+  fuel?:            string;
+  speed?:           string;
+  hasCells?:        boolean;
+  groundClearance?: null | string;
+  numberOfSeats?:  number | null;
+}
+

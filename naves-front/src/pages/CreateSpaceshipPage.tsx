@@ -1,8 +1,16 @@
 import { useRef, useState } from 'react';
-import { useForm } from '../hooks';
+import { useFetch, useForm } from '../hooks';
 
 export const CreateSpaceshipPage = () => {
+  /**
+   * Con este react hooks mantengo la referencia de los radioButtons, así me aseguro que estén en falso o verdadero según corresponda
+   */
   const cells = useRef(false);
+
+  /**
+   * Con este customHook me encargo de tener un control completo sobre los campos del formulario, asignarles un valor inicial,
+   * cambiar su valor con la función onChange para actualizarlos en tiempo real y devolver el formulario a su estado inicial
+   */
   const {
     formState,
     fuel,
@@ -16,6 +24,7 @@ export const CreateSpaceshipPage = () => {
     pushingPower,
     onInputChange,
     onRadioChange,
+    onResetForm,
   } = useForm({
     name: '',
     weight: '',
@@ -29,17 +38,30 @@ export const CreateSpaceshipPage = () => {
     numberOfSeats: 0,
   });
 
+  /**
+   * Endpoint de mi backend
+   */
+  const baseURL = 'http://localhost:8080/v1/api/spaceships';
+
+  const { postFetch } = useFetch(baseURL);
+
+  /**
+   * Este método lo utilizo para cambiar el valor del campo hasCells en la petición, invirtiendo el valor según lo que el usuario realice
+   */
   const handleRadioButtons = (e: any) => {
+    /** Si hasCells = false entonces --> hasCells = true y viceversa */
     cells.current = !cells.current;
     onRadioChange(e, cells.current);
   };
 
   const handleSubmitForm = (e: any) => {
-    e.preventDefault()
-    console.log('Hola');
+    // Con esto evito que al enviar el formulario la página se recargue
+    e.preventDefault();
+    // Envío la petición post al backend
+    postFetch(formState);
+    // Devuelvo los inputs a su estado inicial
+    onResetForm();
   };
-
-  // console.log(formState);
 
   return (
     <div className="mainContainer">
@@ -56,6 +78,10 @@ export const CreateSpaceshipPage = () => {
           <div className="midItem">
             <p className="obligatory">
               Los campos marcados con * son obligatorios
+            </p>
+            <p className="obligatory">
+              Los valores decimales deben ser enviados usando un punto,{' '}
+              <strong>Ejemplo 42.5</strong>
             </p>
             <h6>
               En caso de no contar con la información de algún campo, por favor,
