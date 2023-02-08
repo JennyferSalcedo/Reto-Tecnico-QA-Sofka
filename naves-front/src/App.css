@@ -65,9 +65,14 @@
 }
 
 .button {
-    background-color: chocolate;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    color: white;
+  background-color: chocolate;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+.cardSpaceship {
+  margin: 1rem;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.1);
 }
