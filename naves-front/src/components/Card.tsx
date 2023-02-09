@@ -33,7 +33,10 @@ export const Card = ({
         <p className="card-text">{type}</p>
       </div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">{`Potencia de empuje: ${pushingPower}`}</li>
+        {pushingPower && (
+          <li className="list-group-item">{`Potencia de empuje: ${pushingPower}`}</li>
+        )}
+
         <li className="list-group-item">{`Peso: ${weight}`}</li>
       </ul>
     </div>
