@@ -8,6 +8,7 @@ interface Props {
 export const GridSpaceships = ({data}: Props) => {
   return (
     <div className="container">
+      {/* Mapeo cada una de las naves que llegan desde el backend y creo una carta por cada una */}
         <div className="row">
           {data?.map((spaceship: SpaceshipResponse) => (
             <Card key={spaceship.id} {...spaceship} />
