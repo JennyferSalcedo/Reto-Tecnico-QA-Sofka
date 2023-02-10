@@ -24,12 +24,16 @@ yarn dev
 * [POST] Crear nave espacial -  http://localhost:8080/v1/api/spaceships
 
 # Notas:
-#### 1.1
+#### 1:
 Estos aplicativos se deplegaron en la nube usando [Heroku](https://www.heroku.com/), tanto el frontend como el backend. A continuación las URL de cada aplicativo:
-* **Frontend despelgado:**  [Frontend APP](https://spaceships-frontend.herokuapp.com/create) - https://spaceships-frontend.herokuapp.com/create
-* **Backend despelgado:**  [BAckend APP](https://app-spaceships.herokuapp.com/) - https://app-spaceships.herokuapp.com/
+* **Frontend desplegado:**  [Frontend APP](https://spaceships-frontend.herokuapp.com/create) - https://spaceships-frontend.herokuapp.com/create
+* **Backend desplegado:**  [BAckend APP](https://app-spaceships.herokuapp.com/) - https://app-spaceships.herokuapp.com/
 
 #### Endpoints respectivos:
 * [GET] Todas las naves espaciales - https://app-spaceships.herokuapp.com/v1/api/spaceships
 * [GET] Buscar nave por nombre     - https://app-spaceships.herokuapp.com/v1/api/spaceships/filter?name={spaceshipName}
 * [POST] Crear nave espacial       - https://app-spaceships.herokuapp.com/v1/api/spaceships/spaceships
+#### 2
+Fue necesario separar en otros dos repositorios la aplicación para poder realizar el respectivo despliegue en la nube. A continuación los links de los repositorios con sus respectivas configuraciones:
+**BACKEND** [Repositorio Frontend](https://github.com/JennyferSalcedo/spaceships-frontend)
+**FRONTEND** [Repositorio Backend](https://github.com/JennyferSalcedo/spaceships-backend)
