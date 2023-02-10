@@ -35,5 +35,5 @@ Estos aplicativos se deplegaron en la nube usando [Heroku](https://www.heroku.co
 * [POST] Crear nave espacial       - https://app-spaceships.herokuapp.com/v1/api/spaceships/spaceships
 #### 2
 Fue necesario separar en otros dos repositorios la aplicación para poder realizar el respectivo despliegue en la nube. A continuación los links de los repositorios con sus respectivas configuraciones:
-**BACKEND** [Repositorio Frontend](https://github.com/JennyferSalcedo/spaceships-frontend)
-**FRONTEND** [Repositorio Backend](https://github.com/JennyferSalcedo/spaceships-backend)
+* **FRONTEND** [Repositorio Frontend](https://github.com/JennyferSalcedo/spaceships-frontend)
+* **BACKEND** [Repositorio Backend](https://github.com/JennyferSalcedo/spaceships-backend)
